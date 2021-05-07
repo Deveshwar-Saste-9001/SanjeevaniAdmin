@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4.0dip"
+    android:layout_marginBottom="4.0dip"
+    android:background="#ffffffff"
+    android:elevation="3.0dip">
+
+    <ImageView
+        android:id="@+id/product_image_order1"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:layout_marginBottom="16dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/rating_devider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_title_order_d1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:text="Gemini Oil"
+        android:textColor="#ff000000"
+        android:textSize="16.0sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/order_satus_indicater1"
+        android:layout_width="10.0dip"
+        android:layout_height="10.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:tint="#ff78ff00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_title_order_d1"
+        app:srcCompat="@drawable/default_dot" />
+
+    <TextView
+        android:id="@+id/order_delivered_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8.0dip"
+        android:text="Delivered on 15 jan 2020"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toBottomOf="@id/order_satus_indicater1"
+        app:layout_constraintStart_toEndOf="@id/order_satus_indicater1"
+        app:layout_constraintTop_toTopOf="@id/order_satus_indicater1" />
+
+    <View
+        android:id="@+id/rating_devider1"
+        android:layout_width="409.0dip"
+        android:layout_height="1.0dip"
+        android:layout_marginStart="1.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginEnd="1.0dip"
+        android:layout_marginBottom="8dp"
+        android:background="?android:listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_image_order1" />
+
+    <TextView
+        android:id="@+id/productpriceorder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Rs. 00/-"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rating_devider1"
+        app:layout_constraintEnd_toStartOf="@+id/productQtyorder"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_delivered_date1" />
+
+    <TextView
+        android:id="@+id/productQtyorder"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border_background"
+        android:backgroundTint="@color/black"
+        android:padding="4dp"
+        android:text="Qty:2"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/productpriceorder"
+        app:layout_constraintEnd_toStartOf="@+id/product_image_order1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/productpriceorder"
+        app:layout_constraintTop_toTopOf="@+id/productpriceorder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

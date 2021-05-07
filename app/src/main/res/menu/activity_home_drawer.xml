@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_AdminHome"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_AdminCategory"
+            android:icon="@drawable/ic_business_center_black_24dp"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_AdminOrder"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Orders" />
+        <item
+            android:id="@+id/nav_addProduct"
+            android:icon="@drawable/ic_phonelink_black_24dp"
+            android:title="Product" />
+        <item
+            android:id="@+id/nav_addList"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Add List" />
+    </group>
+
+</menu>
